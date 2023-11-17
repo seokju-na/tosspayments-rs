@@ -2,7 +2,7 @@ use crate::data::Failure;
 use crate::endpoint::Endpoint;
 use base64::Engine;
 use reqwest::header::{HeaderMap, HeaderValue};
-use reqwest::{Response, Url};
+use reqwest::Url;
 use std::str::FromStr;
 
 static USER_AGENT: &str = concat!("Tosspayments/v1 RustBindings/", env!("CARGO_PKG_VERSION"));
