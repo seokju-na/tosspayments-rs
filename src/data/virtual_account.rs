@@ -1,5 +1,6 @@
-use crate::data::{Account, BankCode, RefundStatus, SettlementStatus, VirtualAccountType};
 use serde::{Deserialize, Serialize};
+
+use crate::data::{Account, BankCode, RefundStatus, SettlementStatus, VirtualAccountType};
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
