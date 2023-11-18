@@ -1,5 +1,6 @@
-use crate::data::{AcquireStatus, CardCode, CardType, InterestPayer, OwnerType};
 use serde::{Deserialize, Serialize};
+
+use crate::data::{AcquireStatus, CardCode, CardType, InterestPayer, OwnerType};
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]

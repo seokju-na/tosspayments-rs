@@ -1,7 +1,8 @@
-use crate::data::Payment;
-use crate::endpoint::Endpoint;
 use reqwest::Method;
 use serde::{Deserialize, Serialize};
+
+use crate::data::Payment;
+use crate::endpoint::Endpoint;
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]

@@ -1,9 +1,11 @@
-use crate::data::Failure;
-use crate::endpoint::Endpoint;
+use std::str::FromStr;
+
 use base64::Engine;
 use reqwest::header::{HeaderMap, HeaderValue};
 use reqwest::Url;
-use std::str::FromStr;
+
+use crate::data::Failure;
+use crate::endpoint::Endpoint;
 
 static USER_AGENT: &str = concat!("Tosspayments/v1 RustBindings/", env!("CARGO_PKG_VERSION"));
 
@@ -25,7 +27,7 @@ impl Client {
     );
     headers.insert(
       "authorization",
-      HeaderValue::from_str(&auth).expect("wrong secret key"),
+      HeaderValue::from_str(&format!("Basic {}", auth)).expect("wrong secret key"),
     );
     let client = reqwest::Client::builder()
       .default_headers(headers)

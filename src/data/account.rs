@@ -1,5 +1,6 @@
-use crate::data::BankCode;
 use serde::{Deserialize, Serialize};
+
+use crate::data::BankCode;
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]

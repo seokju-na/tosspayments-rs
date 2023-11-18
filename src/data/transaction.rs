@@ -1,5 +1,6 @@
-use crate::data::{PaymentMethod, PaymentStatus};
 use serde::{Deserialize, Serialize};
+
+use crate::data::{PaymentMethod, PaymentStatus};
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]

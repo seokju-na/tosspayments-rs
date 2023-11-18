@@ -1,5 +1,6 @@
-use crate::data::SettlementStatus;
 use serde::{Deserialize, Serialize};
+
+use crate::data::SettlementStatus;
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]

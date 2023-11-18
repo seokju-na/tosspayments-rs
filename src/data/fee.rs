@@ -1,5 +1,6 @@
-use crate::data::FeeType;
 use serde::{Deserialize, Serialize};
+
+use crate::data::FeeType;
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]

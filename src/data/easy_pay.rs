@@ -1,5 +1,6 @@
-use crate::data::EasyPayProvider;
 use serde::{Deserialize, Serialize};
+
+use crate::data::EasyPayProvider;
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
 #[serde(rename_all = "camelCase")]
