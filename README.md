@@ -1,5 +1,7 @@
 # tosspayments-rs
 
+![Crates.io](https://img.shields.io/crates/v/tosspayments-rs)
+
 Convenient rust bindings and types for the [Tosspayments](https://www.tosspayments.com/) HTTP API aiming to support the entire API surface.
 
 ## Documentation
