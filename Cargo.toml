@@ -27,6 +27,7 @@ serde_qs = "0.12.0"
 base64 = "0.21"
 tokio = "1.34"
 convert_case = "0.6"
+typed-builder = "0.18"
 
 [dev-dependencies]
 httpmock = "0.6"
