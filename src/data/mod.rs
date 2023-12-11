@@ -29,7 +29,6 @@ pub use refund_status::*;
 pub use settlement_status::*;
 pub use transaction::*;
 pub use transfer::*;
-pub use vbv::*;
 pub use virtual_account::*;
 pub use virtual_account_type::*;
 
@@ -64,6 +63,5 @@ mod refund_status;
 mod settlement_status;
 mod transaction;
 mod transfer;
-mod vbv;
 mod virtual_account;
 mod virtual_account_type;
