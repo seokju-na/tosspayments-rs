@@ -1,6 +1,7 @@
 use reqwest::Method;
 use serde::{Deserialize, Serialize};
 use typed_builder::TypedBuilder;
+
 use crate::data::Payment;
 use crate::endpoint::Endpoint;
 

@@ -4,6 +4,7 @@ pub use confirm_keyin_payment::*;
 pub use confirm_payment::*;
 pub use get_payment::*;
 pub use issue_billing::*;
+pub use issue_virtual_account::*;
 pub use list_transactions::*;
 
 mod cancel_payment;
@@ -13,3 +14,4 @@ mod confirm_payment;
 mod get_payment;
 mod issue_billing;
 mod list_transactions;
+mod issue_virtual_account;
