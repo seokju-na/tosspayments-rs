@@ -4,7 +4,7 @@ use typed_builder::TypedBuilder;
 
 use crate::endpoint::Endpoint;
 
-#[derive(Debug, Clone, TypedBuilder)]
+#[derive(Debug, Clone, Serialize, Deserialize, TypedBuilder)]
 #[serde(rename_all = "camelCase")]
 pub struct RequestSettlement {
   pub payment_key: String,
