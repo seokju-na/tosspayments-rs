@@ -63,7 +63,7 @@ impl Endpoint for IssueVirtualAccount {
     Method::POST
   }
 
-  fn body(&self) -> Option<Self::Body> {
-    Some(self.clone())
+  fn body(&self) -> Option<&Self::Body> {
+    Some(&self)
   }
 }

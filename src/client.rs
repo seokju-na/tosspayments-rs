@@ -48,11 +48,11 @@ impl Client {
     let mut url = self.api_base.clone();
     url.set_path(&endpoint.relative_path());
     if let Some(query) = endpoint.query() {
-      let query_str = serde_qs::to_string(&query)?;
+      let query_str = serde_qs::to_string(query)?;
       url.set_query(Some(&query_str));
     }
     let mut request = self.client.request(endpoint.method(), url);
-    if let Some(ref body) = endpoint.body() {
+    if let Some(body) = endpoint.body() {
       request = request.header("content-type", HeaderValue::from_static("application/json"));
       request = request.json(body);
     }

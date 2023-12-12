@@ -8,10 +8,10 @@ pub trait Endpoint {
 
   fn relative_path(&self) -> String;
   fn method(&self) -> reqwest::Method;
-  fn query(&self) -> Option<Self::Query> {
+  fn query(&self) -> Option<&Self::Query> {
     None
   }
-  fn body(&self) -> Option<Self::Body> {
+  fn body(&self) -> Option<&Self::Body> {
     None
   }
   fn idempotency_key(&self) -> Option<String> {
