@@ -25,7 +25,7 @@ impl Endpoint for ConfirmPayment {
     Method::POST
   }
 
-  fn body(&self) -> Option<Self::Body> {
-    Some(self.clone())
+  fn body(&self) -> Option<&Self::Body> {
+    Some(&self)
   }
 }
