@@ -2,13 +2,13 @@ use reqwest::Method;
 use serde::{Deserialize, Serialize};
 use typed_builder::TypedBuilder;
 
-use crate::data::{BankCode, CashReceiptType, Payment};
+use crate::data::{BankCode, CashReceiptTypeForRequest, Payment};
 use crate::endpoint::Endpoint;
 
 #[derive(Debug, Clone, Serialize, Deserialize, TypedBuilder)]
 #[serde(rename_all = "camelCase")]
 pub struct VirtualAccountCashReceipt {
-  pub r#type: CashReceiptType,
+  pub r#type: CashReceiptTypeForRequest,
   pub registration_number: String,
 }
 

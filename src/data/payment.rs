@@ -1,7 +1,7 @@
 use serde::{Deserialize, Serialize};
 
 use crate::data::{
-  Cancel, Card, CashReceipt, Checkout, EasyPay, Failure, GiftCertificate, MobilePhone,
+  Cancel, Card, CashReceiptOnPayment, Checkout, EasyPay, Failure, GiftCertificate, MobilePhone,
   PaymentMethod, PaymentStatus, PaymentType, Receipt, Transfer, VirtualAccount,
 };
 
@@ -41,5 +41,5 @@ pub struct Payment {
   pub easy_pay: Option<EasyPay>,
   pub country: String,
   pub failure: Option<Failure>,
-  pub cash_receipt: Option<CashReceipt>,
+  pub cash_receipt: Option<CashReceiptOnPayment>,
 }
