@@ -1,3 +1,8 @@
+//! API 모듈
+//!
+//! 사용가능한 토스페이먼츠 API를 Rust struct로 제공합니다. 혹시 누락되거나 잘못된 API가 있다면 깃헙 이슈 또는 PR을 생성해
+//! 주세요.
+
 pub use cancel_cash_receipt::*;
 pub use cancel_payment::*;
 pub use confirm_billing::*;
