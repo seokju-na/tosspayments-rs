@@ -1,10 +1,11 @@
 use reqwest::Method;
 use serde::{Deserialize, Serialize};
+use typed_builder::TypedBuilder;
 
 use crate::data::Payment;
 use crate::endpoint::Endpoint;
 
-#[derive(Clone, Debug, Serialize, Deserialize)]
+#[derive(Clone, Debug, Serialize, Deserialize, TypedBuilder)]
 #[serde(rename_all = "camelCase")]
 pub struct ConfirmPayment {
   pub payment_key: String,

@@ -10,7 +10,7 @@ pub struct Transaction {
   pub payment_key: String,
   pub order_id: String,
   pub method: PaymentMethod,
-  pub customer_key: String,
+  pub customer_key: Option<String>,
   pub use_escrow: bool,
   pub receipt_url: String,
   pub status: PaymentStatus,
