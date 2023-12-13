@@ -14,7 +14,7 @@
 
 ```toml
 [dependencies]
-tosspayments-rs = "0.1.1"
+tosspayments-rs = "0.2.0"
 ```
 
 ## 라이센스
