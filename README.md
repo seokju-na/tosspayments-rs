@@ -2,21 +2,21 @@
 
 ![Crates.io](https://img.shields.io/crates/v/tosspayments-rs)
 
-Convenient rust bindings and types for the [Tosspayments](https://www.tosspayments.com/) HTTP API aiming to support the entire API surface.
+[토스페이먼츠](https://www.tosspayments.com/) HTTP API를 쉽게 사용할 수 있게 Rust 바인딩과 타입을 제공합니다.
 
-## Documentation
+## 문서
 
-See the [Rust API Docs](https://docs.rs/tosspayments-rs/latest/tosspayments/).
+[Rust API 문서](https://docs.rs/tosspayments-rs/latest/tosspayments/).
 
-## Installation
+## 설치
 
-`tosspayments-rs` is compatible with the [tokio](https://github.com/tokio-rs/tokio) runtimes and uses [reqwest](https://github.com/seanmonstar/reqwest) with `rustls` for http connection.
+`tosspayments-rs`는 [tokio](https://github.com/tokio-rs/tokio)과 호환되며 내부적으로 http 통신을 위해 [reqwest](https://github.com/seanmonstar/reqwest)를 `rustls`와 함께 사용중입니다.  
 
 ```toml
 [dependencies]
 tosspayments-rs = "0.1.1"
 ```
 
-## License
+## 라이센스
 
 MIT License

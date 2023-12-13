@@ -50,4 +50,16 @@ pub enum CardCode {
   NH농협카드,
   #[serde(rename = "34")]
   Sh수협은행,
+  #[serde(rename = "6D")]
+  다이너스클럽,
+  #[serde(rename = "4M")]
+  마스터카드,
+  #[serde(rename = "3C")]
+  유니온페이,
+  #[serde(rename = "7A")]
+  아메리칸익스프레스,
+  #[serde(rename = "4J")]
+  JCB,
+  #[serde(rename = "4V")]
+  VISA,
 }
