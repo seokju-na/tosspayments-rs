@@ -6,7 +6,7 @@
 
 ## 문서
 
-[Rust API 문서](https://docs.rs/tosspayments-rs/latest/tosspayments/)
+[Docs.rs](https://docs.rs/tosspayments-rs/latest/tosspayments/)
 
 ## 설치
 
