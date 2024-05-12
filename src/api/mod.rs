@@ -17,6 +17,7 @@ pub use list_cash_receipts::*;
 pub use list_settlements::*;
 pub use list_transactions::*;
 pub use request_settlement::*;
+pub use create_submall::*;
 
 mod cancel_payment;
 mod confirm_billing;
@@ -32,3 +33,4 @@ mod request_settlement;
 mod issue_cash_receipt;
 mod cancel_cash_receipt;
 mod list_cash_receipts;
+mod create_submall;

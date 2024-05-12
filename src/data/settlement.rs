@@ -3,7 +3,7 @@ use serde::{Deserialize, Serialize};
 use crate::data::{Cancel, Card, EasyPay, Fee, GiftCertificate, MobilePhone, PaymentMethod, Transfer, VirtualAccount};
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
-#[serde(rename_all = "SCREAMING_SNAKE_CASE")]
+#[serde(rename_all = "camelCase")]
 pub struct Settlement {
   pub m_id: String,
   pub payment_key: String,
