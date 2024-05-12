@@ -32,6 +32,9 @@ pub use transaction::*;
 pub use transfer::*;
 pub use virtual_account::*;
 pub use virtual_account_type::*;
+pub use submall::*;
+pub use submall_type::*;
+pub use submall_account::*;
 
 mod account;
 mod acquire_status;
@@ -67,3 +70,6 @@ mod virtual_account;
 mod virtual_account_type;
 mod settlement;
 mod cash_receipt;
+mod submall;
+mod submall_type;
+mod submall_account;
